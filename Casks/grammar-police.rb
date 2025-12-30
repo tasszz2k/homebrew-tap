@@ -1,6 +1,6 @@
 cask "grammar-police" do
-  version "0.0.1"
-  sha256 "0503d553381f78cdb3103e9408144b944af04e902b0f618f1e79e80b13dc366b"
+  version "0.0.2"
+  sha256 "a6265a1256c07dfc68a6e49ac164dfa833836c0129a3ada634237c9c97c52b73"
 
   url "https://github.com/tasszz2k/GrammarPolice/releases/download/v#{version}/GrammarPolice.zip"
   name "GrammarPolice"
@@ -36,4 +36,3 @@ cask "grammar-police" do
       xattr -cr /Applications/GrammarPolice.app
   EOS
 end
-
