@@ -11,6 +11,13 @@ cask "grammar-police" do
 
   app "GrammarPolice.app"
 
+  # Remove quarantine flag for unsigned app
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/GrammarPolice.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/GrammarPolice",
     "~/Library/Caches/com.tasszz2k.GrammarPolice",
@@ -24,6 +31,9 @@ cask "grammar-police" do
     - Input Monitoring: System Settings > Privacy & Security > Input Monitoring
 
     Configure your OpenAI API key or local LLM in Preferences after installation.
+
+    Note: This app is not code-signed. If you see "app is damaged" error, run:
+      xattr -cr /Applications/GrammarPolice.app
   EOS
 end
 
