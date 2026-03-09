@@ -1,8 +1,8 @@
 class Agentlens < Formula
   desc "CLI tool to scan agent config and track usage costs across AI coding tools"
   homepage "https://github.com/tasszz2k/agent-lens"
-  url "https://registry.npmjs.org/@tasszz2k/agentlens/-/agentlens-0.5.3.tgz"
-  sha256 "b664b86d95686e5a80b67ceaaf66b9c8136b00cd6b7a63e20b99b744830aa73e"
+  url "https://registry.npmjs.org/@tasszz2k/agentlens/-/agentlens-0.5.5.tgz"
+  sha256 "31948ce928641cf25bbc67df451baf4a0006578efe34a85a3a0d44218e8e7a33"
   license "MIT"
 
   depends_on "node"
