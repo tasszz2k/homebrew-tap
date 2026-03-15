@@ -1,6 +1,6 @@
 cask "grammar-police" do
   version "0.0.3"
-  sha256 "0725f4fd9e4634de945c80ae7c67781b4ef0dd7c395dcf64cddee7e59e63d767"
+  sha256 "ed8fe99b49fd28a03fc094695fcbaa1d44468c640939b5870262aa65220083e2"
 
   url "https://github.com/tasszz2k/GrammarPolice/releases/download/v#{version}/GrammarPolice.zip"
   name "GrammarPolice"
@@ -11,7 +11,6 @@ cask "grammar-police" do
 
   app "GrammarPolice.app"
 
-  # Remove quarantine flag for unsigned app
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/GrammarPolice.app"],
