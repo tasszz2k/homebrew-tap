@@ -1,6 +1,6 @@
 cask "grammar-police" do
-  version "0.0.10"
-  sha256 "b201047fecc5606d330c2e2b74a406b885676db6a1eb8e9538cfed502bee6f41"
+  version "0.0.12"
+  sha256 "01fc2e73eee66915b7ea68720aa306147cd9b6f4979ecea76a1eac0a3912cf8f"
 
   url "https://github.com/tasszz2k/GrammarPolice/releases/download/v#{version}/GrammarPolice.zip"
   name "GrammarPolice"
